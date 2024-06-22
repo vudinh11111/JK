@@ -8,6 +8,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send("Hello World");
 })
+app.get('/iu', (req, res) => {
+    res.send("Anh yêu en");
+})
 
 const server = http.createServer(app).listen(PORT, () => {
     console.log("Start localhost 2801")
